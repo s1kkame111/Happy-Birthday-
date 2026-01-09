@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Happy Birthday</title>
+
+
+
+<!-- ALLURA FONT -->
+
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Playfair+Display&display=swap" rel="stylesheet">
+
+
+
+<style>
+
+    body {
+
+        margin: 0;
+
+        padding: 0;
+
+        height: 100vh;
+
+        background: #FFF3F7;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        font-family: 'Playfair Display', serif;
+
+    }
+
+
+
+    .container {
+
+        text-align: center;
+
+    }
+
+
+
+    h1 {
+
+        font-family: 'Allura', cursive;
+
+        font-size: 3rem;
+
+        color: #EAA5B2;
+
+        margin-bottom: 20px;
+
+    }
+
+
+
+    .envelope {
+
+        width: 320px;
+
+        height: 200px;
+
+        background: #f2c6cf;
+
+        position: relative;
+
+        border-radius: 12px;
+
+        cursor: pointer;
+
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+
+    }
+
+
+
+    .heart {
+
+        position: absolute;
+
+        width: 30px;
+
+        height: 30px;
+
+        background: #d94b6a;
+
+        top: 50%;
+
+        left: 50%;
+
+        transform: translate(-50%, -50%) rotate(45deg);
+
+    }
+
+
+
+    .heart::before,
+
+    .heart::after {
+
+        content: '';
+
+        position: absolute;
+
+        width: 30px;
+
+        height: 30px;
+
+        background: #d94b6a;
+
+        border-radius: 50%;
+
+    }
+
+
+
+    .heart::before {
+
+        top: -15px;
+
+        left: 0;
+
+    }
+
+
+
+    .heart::after {
+
+        left: -15px;
+
+        top: 0;
+
+    }
+
+
+
+    .letter {
+
+        display: none;
+
+        width: 320px;
+
+        background: white;
+
+        border-radius: 12px;
+
+        padding: 20px;
+
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+
+        margin-top: 20px;
+
+    }
+
+
+
+    .close-btn {
+
+        font-size: 0.9rem;
+
+        color: #EAA5B2;
+
+        cursor: pointer;
+
+        margin-bottom: 10px;
+
+    }
+
+
+
+    .message {
+
+        max-height: 280px;
+
+        overflow-y: auto;
+
+        text-align: left;
+
+        font-size: 0.95rem;
+
+        line-height: 1.6;
+
+    }
+
+
+
+    .signature {
+
+        margin-top: 20px;
+
+        font-style: italic;
+
+        text-align: right;
+
+    }
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+
+<div class="container">
+
+    <h1>Happy Birthday to You</h1>
+
+
+
+    <div class="envelope" onclick="openLetter()">
+
+        <div class="heart"></div>
+
+    </div>
+
+
+
+    <div class="letter" id="letter">
+
+        <div class="close-btn" onclick="closeLetter()">Close</div>
+
+
+
+        <div class="message">
+
+To The Man, I Want To Spend My Whole Life With. Happy Birthday To My Amenupanda ❤️
+
+
+
+<br><br>
+
+
+
+My gift to you is a promise. I will always be there for you, through the happiest and sadness, to support you and protect you at the cost of my life and my heart. Today is a celebration of you and the wonderful person you have became. I am greatiful, beyond greatiful that you have become a part of my life and every day I wake up thanking God for you.
+
+
+
+<br><br>
+
+
+
+You have given me so much, and I don’t know if I will ever be able to give back the tremendous amount you have invested into me and into our future, but I vow to you an eternity of my love and devotion. I am beyond greatiful to you for everything, for making me realize that I deserve to be loved and to be this happy. I love you more than anything in the universe and it is undying. It is a love that is strong and enduring, and will stand the test of time and any throubles, difficulties or anything else.
+
+
+
+<br><br>
+
+
+
+To know you and be truly known by you, just loving you with everything I am and being able to talk to you every day is one of the most valuable gifts of my life. I wish I could be there to on your birthday, to celebrate this special day with you and watch you blow out canfies on the cake, or your beautiful smile as you read this little virtual letter. Despite your present being in Japan, i wanted you to have something physical to open and hold, a reminder that you are loved and infinitely precious to me, to hug you tight and see your adorable face.
+
+
+
+<br><br>
+
+
+
+I still remember the very first time we met, the day how I fell in love with you for the first time, and how everything happened so unexpectedly. None of us expected everything to turn out into something so beautiful and valuable, it was God who made it happen. He knows we both need each other to complete the love story he created. 
+
+
+
+<br><br>
+
+
+
+To another year of growing in strength, wisdom and love wishing you not only today but everyday endless amounts of love, health, wealth, happiness and the love of those who care for you the most because you deserve it a lot. I pray that God blesses you with all the love, joy, and straight. That He adds many more years of good health and prosperity to your life. May you achieve success in everything you do, all your wishes vome true and may you prosper and shine everywhere you go. May your year be filled with joy, personal growth, and every single thing that brings that sweet smile of yours on your adorable face. 
+
+
+
+<br><br>
+
+
+
+Here is to the wonderful past we have shared together and the beautiful future ahead. I look forward with a happy heart to every single day by your side and warmest, wishes to you on this very special day of yours, my adorable teddy bear. 
+
+
+
+        </div>
+
+
+
+        <div class="signature">
+
+            With all my heart,<br>
+
+            Your Wife 💕
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<script>
+
+function openLetter() {
+
+    document.querySelector('.envelope').style.display = 'none';
+
+    document.getElementById('letter').style.display = 'block';
+
+}
+
+
+
+function closeLetter() {
+
+    document.getElementById('letter').style.display = 'none';
+
+    document.querySelector('.envelope').style.display = 'block';
+
+}
+
+</script>
+
+
+
+</body>
+
+</html>
